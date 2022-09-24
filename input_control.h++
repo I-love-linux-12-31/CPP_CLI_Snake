@@ -9,6 +9,7 @@
 #include "game_logic.h++"
 
 void *input_processing(void *param);
+
 bool can_run = true;
 char pushed_button = NOT_PUSHED;
 bool game_over = false;
