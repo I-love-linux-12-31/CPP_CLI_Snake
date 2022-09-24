@@ -25,6 +25,7 @@ static const char KEY_E = 'e';
 int get_terminal_height (){
     struct winsize w{};
     ioctl(0, TIOCGWINSZ, &w);
+
     return w.ws_row;
 }
 

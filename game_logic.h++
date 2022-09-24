@@ -21,8 +21,8 @@ int vector_x = 1;
 
 
 void create_snake () {
-    snake[0][0] = get_terminal_height() / 2;
-    snake[0][1] =  get_terminal_width() / 2 - 1;
+    snake[0][0] = (get_terminal_height() / 2);
+    snake[0][1] =  (get_terminal_width() / 2) - 1;
     snake_len += 1;
     snake[1][0] = get_terminal_height() / 2;
     snake[1][1] =  get_terminal_width() / 2 - 1;
@@ -54,9 +54,10 @@ void do_movement () {
         snake[i][0] = snake[i - 1][0];
         snake[i][1] = snake[i - 1][1];
     }
-    snake[0][0] = vector_x + snake[0][0];
-    snake[0][1] = vector_y + snake[0][1];
+    snake[0][0] = vector_y + snake[0][0];
+    snake[0][1] = vector_x + snake[0][1];
 
+    logs::log_stream << "Do movement (Snake len = " << snake_len << "):"<< snake[0][0] << "::" << snake[0][1] << std::endl;
 
 }
 
