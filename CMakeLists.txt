@@ -3,4 +3,4 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(untitled main.cpp posix_only.h++ input_control.h++ game_logic.h++)
+add_executable(untitled main.cpp posix_only.h++ input_control.h++ game_logic.h++ beautiful_output_cpp.h++ logs.h++)

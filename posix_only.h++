@@ -13,6 +13,9 @@ static const char KEY_A = 'a';
 static const char KEY_S = 's';
 static const char KEY_D = 'd';
 
+static const char KEY_Q = 'q';
+static const char KEY_E = 'e';
+
 //static const char KEY_UP = 'u';
 //static const char KEY_LEFT = 'l';
 //static const char KEY_DOWN = 'd';
@@ -63,6 +66,10 @@ char get_pushed_button () {
                         tio.c_lflag=bkup;
                         tcsetattr(0,TCSANOW,&tio);
                         return KEY_D;
+                    case KEY_Q:
+                        tio.c_lflag=bkup;
+                        tcsetattr(0,TCSANOW,&tio);
+                        return KEY_Q;
                     default:
                         tio.c_lflag=bkup;
                         tcsetattr(0,TCSANOW,&tio);
