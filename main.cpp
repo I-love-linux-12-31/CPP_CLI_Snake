@@ -75,8 +75,8 @@ int main ()
 
         gotoxy(8, 2);
         std::cout << "\033[31m Score: \033[1m" << std::to_string(score) << "\033[0m";
-        gotoxy(32, 2);
-        std::cout << "\033[31m Speed: \033[1m" << std::to_string(game_sleep_time_ms) << "\033[0m";
+        //gotoxy(32, 2);
+        //std::cout << "\033[31m Speed: \033[1m" << std::to_string(game_sleep_time_ms) << "\033[0m";
 
         gotoxy(fruits[fruits_index][1], fruits[fruits_index][0]);
         switch (fruits[fruits_index][2]) {
